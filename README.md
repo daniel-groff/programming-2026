@@ -3,15 +3,15 @@
 TAble for #safe_factorial
 
 (input, result)
-1,1
-2,2
-3,6
-4,24
-5,120
-6,720
-7,5040
-8,40320
-24, too large to be represented...
+(1,1),
+(2,2),
+(3,6),
+(4,24),
+(5,120),
+(6,720),
+(7,5040),
+(8,40320),
+(24, too large to be represented...)
 
 #Branch explanation###:
 During your presentation, explain a branch and trace one loop.
