@@ -1,0 +1,8 @@
+program temp
+    implicit none 
+    real:: celcius, fahrenheit
+    print *, "temperature in Celsius:"
+    read *, celcius
+    fahrenheit = celcius * 9.0/5.0 + 32.0
+    print *, "The temperature in Fahrenheit is:", fahrenheit
+end program temp
