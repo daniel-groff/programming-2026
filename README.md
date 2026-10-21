@@ -2,7 +2,7 @@
 
 TAble for #safe_factorial
 
-input, result
+(input, result)
 1,1
 2,2
 3,6
