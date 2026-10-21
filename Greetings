@@ -1,0 +1,10 @@
+program greetings
+    
+    implicit none
+    character(len=30) :: name
+
+    print *, "Enter your name:"
+    read *, name
+
+    print *, "Hello, ", trim(name), "! Welcome!"
+end program greetings
