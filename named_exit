@@ -1,0 +1,18 @@
+program named_exit
+  implicit none
+  integer :: i, j
+  search: do i = 1, 3
+    do j= 1,3
+      if (i*j==6) then
+        print*, "found:" , i, j 
+        exit search ! Exit the outer loop when j equals 2
+       end if
+    end do
+  end do search 
+  end program named_exit
+
+  
+      
+
+
+!for finding a special value in the loop and conditionally exiting the loop when that value is found
