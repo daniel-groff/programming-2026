@@ -1,0 +1,17 @@
+program inner_exit
+  implicit none
+  integer :: i, j
+
+  do i = 1, 2
+    do j= 1,3
+      if (j==2) exit     !check the result by changing the value of j in the if statement
+       print *, i,j
+    end do
+  end do
+    
+end program inner_exit
+
+
+
+
+!mix between do and if ...
