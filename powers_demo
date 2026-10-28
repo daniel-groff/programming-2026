@@ -1,0 +1,17 @@
+program powers_demo !powers_demo
+    implicit none
+    integer :: a,b
+
+    call powers(3,a,b)
+    print *,a,b
+
+    contains
+    subroutine powers(n,squared,cubed)
+    implicit none
+    integer, intent(in) :: n
+    integer, intent(out) :: squared,cubed
+    squared= n*n
+    cubed= n*n*n   
+    end subroutine powers   
+
+end program powers_demo
