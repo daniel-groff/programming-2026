@@ -1,0 +1,15 @@
+!subroutine demo_subroutine (small program inside a bigger one)
+!call excecutes subroutine ( functions, orders .. etc)
+
+program demo_subroutine
+  implicit none
+  
+   call greet()
+
+  contains
+  subroutine greet()
+  implicit none
+  print *, "Hello from the subroutine!"
+    end subroutine greet
+
+end program demo_subroutine
