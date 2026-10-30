@@ -1,8 +1,19 @@
-program temp
-    implicit none 
-    real:: celcius, fahrenheit
-    print *, "temperature in Celsius:"
-    read *, celcius
-    fahrenheit = celcius * 9.0/5.0 + 32.0
-    print *, "The temperature in Fahrenheit is:", fahrenheit
-end program temp
+program conversion
+    implicit none
+    real :: a, b, cf, fc, x
+    
+    print*, "from celcius to FArenheit type 1 otherwise 2"
+    read*, x
+
+    if(x==1) then
+        print*, "type temperature in celcius:"
+        read*, a
+        cf= ((a*1.8) + 32)
+        print*, a,"celcius are equal to", cf, "farenheit"
+     else 
+        print*, "type temperature in farenheit"
+        read*, b
+        fc= (b-32)*1.8
+        print*, b, "farenheit are equal to", fc , "celcius"
+
+    end if
